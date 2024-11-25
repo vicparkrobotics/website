@@ -16,7 +16,7 @@
     "@astrojs/svelte": "^5.7.0",
     "astro": "^4.14.6",
     "clsx": "^2.1.1",
-    "lucide-svelte": "^0.436.0",
+    "lucide-svelte": "^0.461.0",
     "svelte": "^4.2.19",
     "svelte-motion": "^0.12.2",
     "tailwind-merge": "^2.5.2"
