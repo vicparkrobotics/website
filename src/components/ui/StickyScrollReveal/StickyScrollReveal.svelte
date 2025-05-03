@@ -9,9 +9,9 @@
 
   let activeCard = 0;
   let backgroundColors = [
-    "var(--slate-900)",
-    "var(--black)",
-    "var(--neutral-900)",
+    "var(--color-slate-900)",
+    "var(--color-black)",
+    "var(--color-neutral-900)",
   ];
   let scrollYProgress = 0;
   let ref: HTMLDivElement;

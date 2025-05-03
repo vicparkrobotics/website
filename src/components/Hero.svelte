@@ -17,7 +17,7 @@
       <div class="max-w-2xl text-center mx-auto">
         <div class="flex justify-center">
           <a
-            class="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 focus:outline-none focus:border-gray-300 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:hover:border-neutral-600 dark:focus:border-neutral-600"
+            class="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 focus:outline-hidden focus:border-gray-300 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:hover:border-neutral-600 dark:focus:border-neutral-600"
             href="/about-us"
           >
             <img
@@ -69,7 +69,7 @@
         <!-- Buttons -->
         <div class="mt-8 gap-3 flex justify-center">
           <a
-            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary hover:bg-[#851414] focus:bg-[#851414] text-white focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary hover:bg-[#851414] focus:bg-[#851414] text-white focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none"
             href="/about-us"
           >
             About Us
@@ -87,7 +87,7 @@
             >
           </a>
           <a
-            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent focus:outline-none disabled:opacity-50 disabled:pointer-events-none text-white hover:bg-neutral-900 bg-neutral-800"
+            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none text-white hover:bg-neutral-900 bg-neutral-800"
             href="#"
           >
             Contact Us

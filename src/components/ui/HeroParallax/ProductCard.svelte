@@ -17,12 +17,12 @@
     y: -20,
   }}
 >
-  <div use:motion class="relative h-96 w-[30rem] flex-shrink-0">
+  <div use:motion class="relative h-96 w-[30rem] shrink-0">
     <img
       src={product.thumbnail}
       height="600"
       width="600"
-      class="absolute inset-0 h-full w-full object-cover object-left-top rounded-md"
+      class="absolute inset-0 h-full w-full object-cover object-top-left rounded-md"
       alt={product.title}
     />
     <div

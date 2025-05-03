@@ -51,7 +51,7 @@
 <div bind:this={ref} class="relative mx-auto h-full w-full max-w-4xl">
   <div class="absolute -left-20 top-3">
     <div
-      class="border-netural-200 ml-[27px] flex h-4 w-4 items-center justify-center rounded-full border shadow-sm"
+      class="border-netural-200 ml-[27px] flex h-4 w-4 items-center justify-center rounded-full border shadow-xs"
       style="box-shadow: {scrollYProgress > 0
         ? 'none'
         : 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}"
@@ -60,9 +60,9 @@
         class="h-2 w-2 rounded-full border border-neutral-300 bg-white"
         style="background-color: {scrollYProgress > 0
           ? 'white'
-          : 'var(--emerald-500)'}; border-color: {scrollYProgress > 0
+          : 'var(--color-emerald-500)'}; border-color: {scrollYProgress > 0
           ? 'white'
-          : 'var(--emerald-600)'}"
+          : 'var(--color-emerald-600)'}"
       />
     </div>
     <svg

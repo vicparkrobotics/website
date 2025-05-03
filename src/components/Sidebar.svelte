@@ -22,7 +22,7 @@
 
     <ul
       tabindex="0"
-      class="menu menu-sm z-[1] p-2 pt-20 pl-7 bg-base-100 space-y-1 w-2/3 h-full"
+      class="menu menu-sm z-1 p-2 pt-20 pl-7 bg-base-100 space-y-1 w-2/3 h-full"
     >
       {#each pages as page (page.name)}
         <!-- loop through pages in data-->

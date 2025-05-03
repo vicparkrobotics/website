@@ -33,9 +33,9 @@
     <!--Creates the buttons and dividers for the Core Values section -->
     <div class="flex flex-wrap w-full grid grid-cols-4">
       <!--Button corresponding to a web page-->
-      <div class="grid h-100 mx-4 my-2 flex-grow card bg-base-300">
+      <div class="grid h-100 mx-4 my-2 grow card bg-base-300">
         <a
-          class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
+          class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
           href={linkFirstBox}
           >{firstBoxText}
         </a>
@@ -48,9 +48,9 @@
         </p>
       </div>
       <!--Button corresponding to a web page-->
-      <div class="grid h-100 mx-4 my-2 flex-grow card bg-base-300">
+      <div class="grid h-100 mx-4 my-2 grow card bg-base-300">
         <a
-          class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
+          class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
           href={linkSecondBox}
           >{secondBoxText}
         </a>
@@ -64,9 +64,9 @@
         </p>
       </div>
       <!--Button corresponding to the a web page-->
-      <div class="grid h-100 mx-4 my-2 flex-grow card bg-base-300">
+      <div class="grid h-100 mx-4 my-2 grow card bg-base-300">
         <a
-          class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
+          class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
           href={linkThirdBox}
           >{thirdBoxText}
         </a>
@@ -80,9 +80,9 @@
         </p>
       </div>
       <!--Button corresponding to the a web page-->
-      <div class="grid h-100 mx-4 my-2 flex-grow card bg-base-300">
+      <div class="grid h-100 mx-4 my-2 grow card bg-base-300">
         <a
-          class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
+          class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
           href={linkFourthBox}
           >{fourthBoxText}
         </a>
