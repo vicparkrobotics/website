@@ -25,7 +25,11 @@
 
     <!-- Button (link) -->
     <div class="card-actions justify-end">
-      <a href={link} class="btn btn-primary">See More</a>
+      <a
+        href={link}
+        class="btn btn-primary focus:outline-none focus:ring-2 focus:ring-blue-500"
+        aria-label={`Learn more about ${title}`}>See More</a
+      >
     </div>
   </div>
 </div>

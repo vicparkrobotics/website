@@ -3,14 +3,15 @@
 <script lang="ts">
 </script>
 
-<div class="my-10 py-10">
-  <div class="card card-side bg-base-100 shadow-xl">
+<section class="my-10 py-10">
+  <article class="card card-side bg-base-100 shadow-xl">
     <div class="w-1/3 md:w-1/2">
       <figure>
         <img
           src="/electrical-subteam.webp"
           style="height: 400px;"
-          alt="electrical-subteam"
+          alt="Media subteam members working on photography and video editing projects"
+          loading="lazy"
         />
       </figure>
     </div>
@@ -26,12 +27,12 @@
         software.
       </p>
       <br />
-      <h1 class="text-lg">
-        <b
+      <h3 class="text-lg">
+        <strong
           >We can appreciate the media team's work on our <u>social media</u> linked
           below:
-        </b>
-      </h1>
+        </strong>
+      </h3>
     </div>
-  </div>
-</div>
+  </article>
+</section>

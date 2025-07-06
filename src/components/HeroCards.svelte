@@ -3,23 +3,23 @@
     {
       title: "Our Mission",
       description:
-        "Team 4914's mission is to stimulate students and inspire a new generation of students into STEM through hands-on learning and an environment for creativity and confidence to grow.",
+        "VPCI Robotics' mission is to stimulate students and inspire a new generation of students into STEM through hands-on learning and an environment for creativity and confidence to grow.",
       image: "/index/our-mission.webp",
-      alt: "our-mission",
+      alt: "Students working together on robotics projects, representing our mission to inspire STEM learning",
     },
     {
       title: "Our Goals",
       description:
-        "The primary goal of 4914 is the extension of STEM into the community, and helping students understand the importance of STEM. Beyond that, we hope to propagate the values of FIRST & Team 4914 into the community, provide a comfortable enviroment for students to learn about STEM, and create strong bonds, both winthin our team members, and with the general community.",
+        "The primary goal of VPCI Robotics is the extension of STEM into the community, and helping students understand the importance of STEM. Beyond that, we hope to propagate the values of FIRST & VPCI Robotics into the community, provide a comfortable environment for students to learn about STEM, and create strong bonds, both within our team members, and within the community.",
       image: "/index/goals.webp",
-      alt: "our-goals",
+      alt: "Team members collaborating and planning, representing our goals for community engagement",
     },
     {
       title: "Our History",
       description:
-        "Starting in 2014, Team 4914 “Panthers” was established at Victoria Park Collegiate Institute with students from the school and several teacher mentors. Since then, we have won 11 FRC awards and grown in size and diversity. Through the help of our dedicated members, we have refined & polished a clear system to engage students & educate them about STEM while also providing a fun and engaging competition background for them to test their skills and grow.",
+        'Starting in 2014, Team 4914 "Panthers" was established at Victoria Park Collegiate Institute with students from the school and several teacher mentors. Since then, we have won 11 FRC awards and grown in size and diversity. Today, we operate as two First Tech Challenge Teams 24484 and 24485, continuing our legacy of engaging students in STEM, providing a fun and competitive environment for them to put their skills to the test.',
       image: "/index/history.webp",
-      alt: "our-history",
+      alt: "Historical photos and achievements of VPCI Robotics team over the years",
     },
   ];
 </script>
@@ -30,11 +30,13 @@
       <div class="max-w-md">
         <h1 class="text-5xl font-bold font-pixel duration-100">
           <span id="welcome"></span>
+          <span class="sr-only">Welcome to VPCI Robotics</span>
         </h1>
         <p class="pt-6">
-          Welcome to Team 4914, the Victoria Park Panthers. We are a student run
-          FIRST Robotics Competition (FRC) team at Victoria Park C.I. run by 3
-          mentors and over 100 students.
+          Welcome to VPCI Robotics, the Victoria Park Panthers. We are a student
+          run FIRST Tech Competition (FTC) program at Victoria Park C.I.
+          operating as Teams 24484 and 24485, run by 2 mentors and over 20
+          students.
         </p>
       </div>
     </div>
@@ -44,7 +46,7 @@
     class="flex flex-col md:flex-row justify-center gap-6 items-center md:items-stretch p-10 mb-10"
   >
     {#each cards as card}
-      <div
+      <article
         class="max-w-sm w-full p-4 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group hover:scale-[1.05] transition-transform duration-200"
       >
         <div class="rounded-xl z-40">
@@ -66,7 +68,7 @@
         >
           {card.description}
         </p>
-      </div>
+      </article>
     {/each}
   </div>
 </div>

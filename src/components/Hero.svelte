@@ -17,12 +17,13 @@
       <div class="max-w-2xl text-center mx-auto">
         <div class="flex justify-center">
           <a
-            class="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 focus:outline-hidden focus:border-gray-300 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:hover:border-neutral-600 dark:focus:border-neutral-600"
+            class="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-gray-300 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:hover:border-neutral-600 dark:focus:border-neutral-600"
             href="/about-us"
+            aria-label="Learn more about VPCI Robotics FTC Teams 24484 and 24485"
           >
             <img
               src="/logo-transparent.webp"
-              alt="logo"
+              alt="Victoria Park Collegiate Institute Robotics logo"
               class="w-6 invert dark:invert-0"
               loading="eager"
             />
@@ -41,7 +42,8 @@
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
-                stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg
+                stroke-linejoin="round"
+                aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg
               >
             </span>
           </a>
@@ -69,8 +71,9 @@
         <!-- Buttons -->
         <div class="mt-8 gap-3 flex justify-center">
           <a
-            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary hover:bg-[#851414] focus:bg-[#851414] text-white focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none"
+            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-primary hover:bg-[#851414] focus:bg-[#851414] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
             href="/about-us"
+            aria-label="Learn more about Victoria Park Robotics"
           >
             About Us
             <svg
@@ -83,12 +86,14 @@
               stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
-              stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg
+              stroke-linejoin="round"
+              aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg
             >
           </a>
           <a
-            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none text-white hover:bg-neutral-900 bg-neutral-800"
-            href="#"
+            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent focus:outline-none focus:ring-2 focus:ring-gray-500 disabled:opacity-50 disabled:pointer-events-none text-white hover:bg-neutral-900 bg-neutral-800"
+            href="#contact"
+            aria-label="Contact Victoria Park Robotics team"
           >
             Contact Us
           </a>

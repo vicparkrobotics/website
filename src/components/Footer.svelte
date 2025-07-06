@@ -8,115 +8,117 @@
 </script>
 
 <footer
-  class="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto border-t border-zinc-700"
+  class="w-full bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700"
+  id="footer"
 >
-  <div class="flex flex-col justify-between md:flex-row gap-6 mb-10">
-    <!-- About -->
-    <div class="md:w-2/3">
-      <img
-        class="w-24 lg:w-24 bg-slate-700 float-left mr-4 rounded-xl"
-        src={logoImage}
-        alt="VPCI Robotics Logo"
-      />
-      <h2 class="font-bold text-base md:text-xl">Victoria Park Robotics</h2>
-      <p class="text-sm md:text-base">Victoria Park Collegiate Institute</p>
-      <p class="text-sm md:text-base">15 Wallingford Rd</p>
-      <p class="text-sm md:text-base">Toronto, ON, CAN</p>
-    </div>
-    <!-- End Col -->
-
-    <div class="md:w-1/3 flex flex-col justify-center">
-      <h1 class="mt-auto text-lg font-boldtext-base uppercase">Links</h1>
-
-      <div class="mt-3 grid space-y-3 text-base">
-        <p>
-          <a
-            class="inline-flex gap-x-2 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-            href="/about-us">About</a
-          >
-        </p>
-        <p>
-          <a
-            class="inline-flex gap-x-2 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-            href="/resources">Resources</a
-          >
-        </p>
-      </div>
-    </div>
-    <!-- End Col -->
-  </div>
-  <!-- End Grid -->
-
-  <div class="pt-5 mt-5 border-t border-gray-500 dark:border-gray-700">
-    <div class="sm:flex sm:justify-between sm:items-center">
-      <div class="flex justify-center items-center gap-x-3 mb-4 sm:mb-0">
-        <div
-          class=" text-sm text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-        >
-          VPCI Robotics © {today.getFullYear()} All Rights Reserved.
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <!-- About -->
+      <div class="md:col-span-2">
+        <div class="flex items-start space-x-4">
+          <img
+            class="w-16 h-16 lg:w-20 lg:h-20 rounded-xl shadow-sm bg-gray-700"
+            src={logoImage}
+            alt="VPCI Robotics Logo"
+          />
+          <div>
+            <h2
+              class="text-xl font-semibold text-gray-900 dark:text-white mb-2"
+            >
+              Victoria Park Robotics
+            </h2>
+            <div class="text-gray-600 dark:text-gray-400 space-y-1">
+              <p class="font-medium">Victoria Park Collegiate Institute</p>
+              <p>15 Wallingford Rd</p>
+              <p>Toronto, ON, Canada</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Social Brands -->
-      <div class="flex justify-center items-center gap-4">
-        <a
-          class="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-          href={linkInstagram}
-        >
-          <svg
-            class="w-4 h-4"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            viewBox="0 0 16 16"
+      <!-- Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+          Quick Links
+        </h3>
+        <nav class="space-y-3">
+          <a
+            href="/about-us"
+            class="block text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200"
           >
-            <path
-              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-            />
-          </svg>
-        </a>
-        <a
-          class="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-          href={linkGithub}
-        >
-          <svg
-            class="w-4 h-4"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            viewBox="0 0 16 16"
+            About Us
+          </a>
+          <a
+            href="/resources"
+            class="block text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200"
           >
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-            />
-          </svg>
-        </a>
-        <a
-          class="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-          href={linkEmail}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            width="20"
-            height="20"
-            class="w-5 h-5"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-            />
-          </svg>
-        </a>
+            Resources
+          </a>
+        </nav>
       </div>
-      <!-- End Social Brands -->
-      <!-- End Col -->
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="pt-8 border-t border-gray-200 dark:border-gray-700">
+      <div
+        class="flex flex-col items-center md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0"
+      >
+        <p class="text-sm text-gray-500 dark:text-gray-400">
+          © {today.getFullYear()} VPCI Robotics. All rights reserved.
+        </p>
+
+        <!-- Social Links -->
+        <div class="flex space-x-4">
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 hidden sm:block"
+          >
+            Follow us:
+          </span>
+          <div class="flex space-x-3">
+            <a
+              href={linkInstagram}
+              class="text-gray-400 hover:text-pink-500 dark:hover:text-pink-400 transition-colors duration-200"
+              aria-label="Instagram"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+            <a
+              href={linkGithub}
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+              aria-label="GitHub"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a
+              href={linkEmail}
+              class="text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200"
+              aria-label="Email"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </footer>

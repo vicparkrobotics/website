@@ -48,6 +48,8 @@
     activeCard % backgroundColors.length
   ]}"
   class="relative flex h-[30rem] justify-center space-x-10 overflow-y-auto rounded-md p-10 transition ease-in-out"
+  role="region"
+  aria-label="Interactive content showcase"
 >
   <div class="div relative flex items-start px-4">
     <div class="max-w-2xl">
@@ -75,5 +77,7 @@
            background-size: cover;
            background-position: center;"
     class="sticky top-10 hidden h-60 w-80 overflow-hidden rounded-md bg-white lg:block"
+    role="img"
+    aria-label={content[activeCard].title}
   ></div>
 </div>

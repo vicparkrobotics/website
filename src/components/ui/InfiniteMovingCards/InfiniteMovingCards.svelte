@@ -64,6 +64,8 @@
     "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
     className,
   )}
+  role="region"
+  aria-label="Scrolling testimonials"
 >
   <ul
     bind:this={scrollerRef}
@@ -72,11 +74,13 @@
       start && "animate-scroll",
       pauseOnHover && "hover:[animation-play-state:paused]",
     )}
+    role="list"
   >
     {#each items as item, idx (item.name)}
       <li
         class="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-b-0 border-slate-700 px-8 py-6 md:w-[450px]"
         style="background: linear-gradient(180deg, var(--slate-800), var(--slate-900));"
+        role="listitem"
       >
         <blockquote>
           <div

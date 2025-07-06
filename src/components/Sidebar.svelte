@@ -2,10 +2,7 @@
   import pages from "./pageNames.ts";
 </script>
 
-<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-<!-- svelte-ignore a11y-label-has-associated-control -->
-
-<div class="drawer z-10">
+<div class="drawer z-50">
   <!-- hidden checkbox that stores state under the hood -->
   <input id="sidebar" type="checkbox" class="drawer-toggle" />
 
@@ -20,9 +17,9 @@
     <label for="sidebar" aria-label="close sidebar" class="drawer-overlay"
     ></label>
 
-    <ul
-      tabindex="0"
+    <nav
       class="menu menu-sm z-1 p-2 pt-20 pl-7 bg-base-100 space-y-1 w-2/3 h-full"
+      aria-label="Main navigation menu"
     >
       {#each pages as page (page.name)}
         <!-- loop through pages in data-->
@@ -30,15 +27,22 @@
           {#if page.submenus}
             <!-- pages with submenus -->
             <details>
-              <summary class="text-xl font-medium">{page.name}</summary>
+              <summary
+                class="text-xl font-medium focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                {page.name}
+              </summary>
               <!-- page title -->
 
-              <ul>
+              <ul role="menu">
                 <!-- submenus -->
                 {#each page.submenus as submenu (submenu.name)}
                   <!-- loop through each submenu -->
-                  <li>
-                    <a class="text-lg font-medium" href={submenu.href}
+                  <li role="menuitem">
+                    <a
+                      class="text-lg font-medium focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      href={submenu.href}
+                      aria-label={`Navigate to ${submenu.name} page`}
                       >{submenu.name}</a
                     >
                   </li>
@@ -47,10 +51,14 @@
             </details>
           {:else}
             <!-- no submenus -->
-            <a class="text-xl font-medium" href={page.href}>{page.name}</a>
+            <a
+              class="text-xl font-medium focus:outline-none focus:ring-2 focus:ring-blue-500"
+              href={page.href}
+              aria-label={`Navigate to ${page.name} page`}>{page.name}</a
+            >
           {/if}
         </li>
       {/each}
-    </ul>
+    </nav>
   </div>
 </div>

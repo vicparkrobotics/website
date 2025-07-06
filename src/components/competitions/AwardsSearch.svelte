@@ -21,7 +21,9 @@
         on:keypress={(e) => e.key == "Enter" && onEnter()}
         bind:value={searchTerm}
         class="input input-bordered join-item"
-        placeholder="Search"
+        placeholder="Search awards..."
+        aria-label="Search for awards by name or description"
+        type="search"
       />
     </div>
   </div>
@@ -30,6 +32,7 @@
     on:input={onEnter}
     bind:value={searchYear}
     class="select select-bordered join-item"
+    aria-label="Filter awards by year"
   >
     <!-- Filter by Year -->
     <option selected>All Years</option>
@@ -39,7 +42,10 @@
     {/each}
   </select>
 
-  <button on:click={onEnter} class="btn join-item bg-blue-700 hover:bg-blue-600"
-    >Search</button
+  <button
+    on:click={onEnter}
+    class="btn join-item bg-blue-700 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    aria-label="Execute search for awards"
+    type="button">Search</button
   >
 </div>

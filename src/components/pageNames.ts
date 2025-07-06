@@ -11,17 +11,14 @@ const pages: Page[] = [
   {
     name: "Subteams",
     submenus: [
-      { name: "Design and CAD", href: "/subteams/design" },
-      { name: "Build", href: "/subteams/build" },
-      { name: "Electronics", href: "/subteams/electronics" },
+      { name: "Build and Design", href: "/subteams/build" },
       { name: "Programming", href: "/subteams/programming" },
       { name: "Media", href: "/subteams/media" },
     ],
   },
   { name: "About Us", href: "/about-us" },
-  { name: "Ongoing Project", href: "/ongoing-project" },
   { name: "Blog", href: "/blog" },
-  { name: "Competitions", href: "/competitions" },
+  { name: "Awards", href: "/awards" },
   { name: "Community Outreach", href: "/community-outreach" },
   { name: "Resources", href: "/resources" },
 ];

@@ -15,19 +15,21 @@ const posts = await getPosts();
   />
   <div class="grid grid-cols-2 gap-4 place-items-center p-8">
     {
-      posts.map(async (post) => {
-        const { remarkPluginFrontmatter } = await post.render();
-        return (
-          <BlogButton
-            title={post.data.title}
-            author={post.data.team}
-            description={post.data.description}
-            coverImg={post.data.image.src}
-            linkTo={post.slug}
-            readTime={remarkPluginFrontmatter.minutesRead}
-          />
-        );
-      })
+      posts
+        ? posts.map(async (post) => {
+            const { remarkPluginFrontmatter } = await post.render();
+            return (
+              <BlogButton
+                title={post.data.title}
+                author={post.data.team}
+                description={post.data.description}
+                coverImg={post.data.image.src}
+                linkTo={post.slug}
+                readTime={remarkPluginFrontmatter.minutesRead}
+              />
+            );
+          })
+        : "No posts available at the moment."
     }
   </div>
 </BaseLayout>

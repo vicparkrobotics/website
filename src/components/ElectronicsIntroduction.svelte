@@ -3,14 +3,15 @@
 <script lang="ts">
 </script>
 
-<div class="my-10">
-  <div class="card card-side bg-base-100 shadow-xl px-5">
+<section class="my-10">
+  <article class="card card-side bg-base-100 shadow-xl px-5">
     <div class="">
       <figure>
         <img
           src="/electrical-subteam.webp"
           style="height: 300px; width: 500px;"
-          alt="electrical-subteam"
+          alt="Members of the electrical subteam working on robot wiring and electronic components"
+          loading="lazy"
         />
       </figure>
     </div>
@@ -29,9 +30,9 @@
       <p>
         Members don't need any prerequisite knowledge in electronics as we will
         provide you with resources and workshops for you to learn the necessary
-        skills, but enthusiam and willingness to learn are important
+        skills, but enthusiasm and willingness to learn are important
         characteristics.
       </p>
     </div>
-  </div>
-</div>
+  </article>
+</section>

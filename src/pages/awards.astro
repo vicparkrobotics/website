@@ -2,7 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.svelte";
 import AwardsSection from "../components/competitions/AwardsSection.svelte";
-import GameSection from "../components/competitions/GameSection.svelte";
 ---
 
 <script></script>
@@ -15,8 +14,7 @@ import GameSection from "../components/competitions/GameSection.svelte";
     descriptionText="Contests that we've won in the past."
   />
 
-  <AwardsSection client:idle />
-  <GameSection />
+  <AwardsSection />
 </BaseLayout>
 
 <style></style>

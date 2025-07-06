@@ -31,7 +31,7 @@
     </div>
 
     <!--Creates the buttons and dividers for the Core Values section -->
-    <div class="flex flex-wrap w-full grid grid-cols-4">
+    <div class="flex flex-wrap w-full grid-cols-4">
       <!--Button corresponding to a web page-->
       <div class="grid h-100 mx-4 my-2 grow card bg-base-300">
         <a

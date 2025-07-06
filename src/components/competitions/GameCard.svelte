@@ -14,14 +14,16 @@
   <iframe
     class="m-none mt-none max-w-[45%] h-full border-r dark:border-zinc-700 rounded-l-xl"
     src={videoURL}
-    title="Youtube Video"
+    title={`YouTube video about ${title}`}
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen
+    loading="lazy"
+    aria-label={`Video demonstration of ${title}`}
   >
   </iframe>
 
-  <div class="card-body overflow-scroll">
+  <div class="card-body overflow-auto">
     <h2 class="card-title text-2xl">{title}</h2>
     <p>{content}</p>
   </div>
