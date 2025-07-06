@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && echo '_worker.js' >> dist/.assetsignore",
     "preview": "wrangler pages dev ./dist",
     "astro": "astro",
     "prepare": "husky",
