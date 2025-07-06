@@ -7,10 +7,11 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "wrangler pages dev ./dist",
     "astro": "astro",
     "prepare": "husky",
-    "prettier": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte"
+    "prettier": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.5.3",

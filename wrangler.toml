@@ -1,5 +1,5 @@
 name = "robotics-website"
-compatibility_date = "2025-03-25"
+compatibility_date = "2025-07-06"
 
 [assets]
 directory = "./dist"
